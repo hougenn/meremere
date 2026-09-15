@@ -1,7 +1,6 @@
 import { z } from "zod";
 
 export const ChatBodySchema = z.object({
-  provider: z.enum(["openai", "anthropic"]),
   model: z.string(),
   message: z.string(),
 });
